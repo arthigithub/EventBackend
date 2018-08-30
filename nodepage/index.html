@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+
+    <head>
+
+         <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+        <!--Animations-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+
+
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration Form with HTML5 and CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+        <link rel="stylesheet" type="text/css" href="pg.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Libre+Baskerville|Courgette|Allura|Caveat|Cookie|Dancing+Script|Eczar|Fredericka+the+Great|Great+Vibes|Herr+Von+Muellerhoff|Italianno|Josefin+Slab|Kaushan+Script|Lobster|Lobster+Two|Lora|Marck+Script|MedievalSharp|Merienda|Merriweather|Montserrat|Niconne|Oleo+Script|Open+Sans+Condensed:300|Pacifico|Parisienne|Poiret+One|Quicksand|Rancho|Sacramento|Satisfy|Slabo+27px|Tangerine|Yellowtail');
+      
+        </style>
+    <body>
+
+            <div class="navbar" id="navbar">
+                    <p align="center" style="font-size: 6pc;font-family: 'Tangerine', cursive; font-weight:900;height: 6pc;color: white;" class="animated zoomIn">VenYou
+                        </p>
+                  
+
+                    <a href="singlepg.html" class="a">Home</a>
+        <a href="singlepg.html #About">About</a>
+        
+
+        <div class="dropdown">
+          <button class="dropbtn" onclick="mynewFunction()">Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="wedding.html">Wedding</a>
+            <a href="birthday.html">Birthday</a>
+            <a href="naming..html">Naming ceremony</a>
+            <a href="concert.html">Concerts</a>
+            <a href="cooperate.html">Official</a>
+            <a href="festival.html">Festivals</a>
+            <a href="college.html">College Events</a>
+            
+          </div>
+        </div>
+        <a href="gallery.html">Gallery</a>
+        <a href="singlepg.html #feedback">Feedback</a>
+        <a href="registration.html">Login</a>
+        <a href="singlepg.html #Contact">Contact us</a>
+      </div>
+     
+
+
+        <script>
+          window.onscroll = function() {myFunction()};
+
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+
+          function mynewFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+            }
+          }
+          </script>
+
+
+                    
+            
+            
+<br><br>
+
+				<nav class="codrops-demos">
+					
+					<!--<a href="index.html" class="current-demo">Demo 1</a>
+					<a href="index2.html">Demo 2</a>
+					<a href="index3.html">Demo 3</a>-->
+				</nav>
+        
+            <section>				
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form"><br>
+                            <form> 
+                                <h1>log in<br><span>Click <strong>"Join us"</strong> to see the form switch</span>
+                                </h1> 
+                               
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" >Your email or username</label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="eg.meghana"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Password</label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+		
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <p class="login button"> 
+                                    <input type="submit" value="login" /> 
+								</p>
+                                <p class="change_link">
+									Not a member yet ?
+									<a href="#toregister" class="to_register"><b>Join us</b></a>
+								</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1> Register </h1> 
+                              
+                               <p>
+    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                        <label for="Phone" class="youmail" data-icon="" > Phone no.</label>
+                                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="contact"/> 
+                                    </p>
+                                   
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="Sign up"/> 
+								</p>
+                                <p class="change_link">  
+									Already a member ?
+									<a href="#tologin" class="to_register"><b> Go and log in</b> </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        
+    </body>
+</html>
